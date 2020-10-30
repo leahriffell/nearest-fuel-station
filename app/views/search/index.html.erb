@@ -1,12 +1,13 @@
-<h1>Closest Station</h1>
+<h1>Closest Electric Station</h1>
 
-<%= @station.name %>
-<%= @station.street_address %>
-<%= @station.city %>
-<%= @station.state %>
-<%= @station.zip %>
-<%= @station.fuel_type %>
-<%= @station.access_times %>
-<%= @directions.distance %>
-<%= @directions.time_to_destination %>
+<h3><%= @station.name %><br></h3>
+<%= @station.street_address %><br>
+<%= @station.city %><br>
+<%= @station.state %><br>
+<%= @station.zip %><br>
+<%= @station.fuel_type %><br>
+<%= @station.access_times %><br>
+<h3>Directions</h3>
+<%= "#{@directions.distance} miles" %><br>
+<%= @directions.time_to_destination %><br>
 <%= @directions.instructions %>
